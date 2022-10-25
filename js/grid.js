@@ -46,10 +46,14 @@ function populateRows(size) {
 function checkHover(div) {
     // let hovered = document.getElementsByClassName(".square");
 
-
+    let op = 0.2;
 
     div.addEventListener("mouseover", () => {
         div.classList.add("painted");
+
+        op += 0.2;
+
+        div.style.opacity = op;
     });
 
 

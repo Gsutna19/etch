@@ -31,4 +31,5 @@ div {
 
 .square:hover, .painted {
     background-color: black;
+    opacity: 0.2;
 }
