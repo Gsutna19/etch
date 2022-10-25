@@ -1,0 +1,12 @@
+#container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 960px;
+    /* height: 85%; */
+    border: 2px solid black;
+}
+
+.square {
+    background-color: aqua;
+}
