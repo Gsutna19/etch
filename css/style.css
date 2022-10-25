@@ -26,5 +26,9 @@ div {
     /* min-height: 8px; */
     height: 100%;
     border: 1px solid grey;
+    background-color: white;
+}
+
+.square:hover, .painted {
     background-color: black;
 }

@@ -38,8 +38,30 @@ function populateRows(size) {
             let gridDiv = document.createElement("div");
             gridDiv.className = "square";
             document.getElementById(i).appendChild(gridDiv);
+            checkHover(gridDiv);
         }
     }
+}
+
+function checkHover(div) {
+    // let hovered = document.getElementsByClassName(".square");
+
+
+
+    div.addEventListener("mouseover", () => {
+        div.classList.add("painted");
+    });
+
+
+    // .forEach(div => {
+
+    //     div.addEventListener("mouseover", function() {
+    //         div.classList.add = "painted";
+    //     });
+    //     div.addEventListener("mouseout", function() {
+    //         div.classList.add = "painted";
+    //     });
+    // });
 }
 
 function draw() {
@@ -50,4 +72,5 @@ function draw() {
 
     createRows(gridSize);
     populateRows(gridSize);
+    checkHover();
 }
